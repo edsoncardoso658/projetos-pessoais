@@ -3,8 +3,57 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-image: linear-gradient();
+    background-image: linear-gradient(to right,rgba(0, 123, 255, 0.703), rgba(212, 13, 172, 0.774), pink);
+}
+
+main{
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+section#price-plans div#plans-container{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+
+}
+
+div.plans-item{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.553);
+    padding: 20px;
+    border-radius: 10px;
+    height: 300px;
+    margin: 10px;
+
+}
+
+div#enterprise{
+    background-color: black;
+    color: white;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    main{
+        width: 600px;
+    }
+
+    section#price-plans div#plans-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+
+}
+
 }
