@@ -14,7 +14,7 @@ header{
     text-align: center;
     padding: 10px;
     margin: 10px;
-    color: rgb(112, 1, 1);;
+    color: rgb(112, 1, 1);
 }
 
 main{
@@ -83,6 +83,7 @@ div.flex-item{
 h2, h3{
     text-align: center;
     margin: 5px;
+    color: rgb(112, 1, 1);
 }
 
 p{
