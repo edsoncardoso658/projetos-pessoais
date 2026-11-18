@@ -8,9 +8,13 @@
 }
 
 
+body{
+    background-image: linear-gradient(to right,rgba(0, 123, 255, 0.703), rgba(212, 13, 172, 0.774), pink);
+
+}
 
 div#main-container{
-    background-image: linear-gradient(to right,rgba(0, 123, 255, 0.703), rgba(212, 13, 172, 0.774), pink);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +39,7 @@ section#price-plans div#plans-container{
 }
 
 div.plans-item{
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.553);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.379);
     padding: 10px;
     border-radius: 10px;
     height: 300px;
@@ -43,6 +47,10 @@ div.plans-item{
     line-height: 1.5Em;
    
 
+}
+
+main h2{
+    text-align: center;
 }
 
 div.plans-item p{
@@ -78,6 +86,7 @@ button#sign-up{
 div#enterprise{
     background-color: black;
     color: white;
+  
 }
 
 li{
