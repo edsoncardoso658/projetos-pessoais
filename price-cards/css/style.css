@@ -4,16 +4,22 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-body{
+
+
+div#main-container{
     background-image: linear-gradient(to right,rgba(0, 123, 255, 0.703), rgba(212, 13, 172, 0.774), pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 main{
     background-color: white;
     width: 300px;
-    margin: auto;
     padding: 20px;
     border-radius: 10px;
     margin-top: 10px;
@@ -30,30 +36,73 @@ section#price-plans div#plans-container{
 
 div.plans-item{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.553);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     height: 300px;
     margin: 10px;
+    line-height: 1.5Em;
+   
 
 }
+
+div.plans-item p{
+    font-weight: bold;
+    font-size: 1.5Em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.plans-item button{
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.551);
+}
+
+button #get-started{
+    background-color: gray;
+}
+
+button#upgrade{
+    background-color: rgb(216, 84, 168);
+}
+button#sign-up{
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.526);
+
+}
+
 
 div#enterprise{
     background-color: black;
     color: white;
 }
 
+li{
+    list-style: none;
+    margin: auto;
+    display: block;
+    
+}
+
 
 @media only screen and (min-width: 768px) {
 
     main{
-        width: 600px;
+        width: 700px;
     }
 
     section#price-plans div#plans-container{
         display: grid;
         grid-template-columns: auto auto auto;
-        gap: 20px;
+        gap: 10px;
+}
 
+div#main-container{
+    height: 100vh;
+   
 }
 
 }
