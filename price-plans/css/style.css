@@ -18,12 +18,13 @@ div#main-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
    
 }
 
 main{
     background-color: white;
-    width: 300px;
+    width: min(900px, calc(100% - 128px));
     padding: 20px;
     border-radius: 10px;
     margin-top: 10px;
@@ -42,7 +43,7 @@ div.plans-item{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.379);
     padding: 10px;
     border-radius: 10px;
-    height: 300px;
+    min-height: 350px;
     margin: 10px;
     line-height: 1.5Em;
    
@@ -53,7 +54,7 @@ main h2{
     text-align: center;
 }
 
-div.plans-item p{
+div.plans-item h3, div.plans-item p{
     font-weight: bold;
     font-size: 1.5Em;
     padding-top: 5px;
@@ -63,13 +64,16 @@ div.plans-item p{
 div.plans-item button{
     height: 40px;
     width: 150px;
-    margin: 5px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
     border-radius: 5px;
     border: none;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.551);
 }
 
-button #get-started{
+button#get-started{
     background-color: gray;
 }
 
@@ -99,9 +103,6 @@ li{
 
 @media only screen and (min-width: 768px) {
 
-    main{
-        width: 700px;
-    }
 
     section#price-plans div#plans-container{
         display: grid;
